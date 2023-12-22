@@ -24,7 +24,7 @@ RUN --mount=type=cache,target=/root/.cache/pip  \
 
 WORKDIR ${ROOT}
 
-ARG BRANCH=master SHA=7e941f9f247f9b013a33c2e7d117466108414e99
+ARG BRANCH=master SHA=d35267e85a865c30a5fa63fdb0a21f94f4cc37e7
 RUN --mount=type=cache,target=/root/.cache/pip \
   git fetch && \
   git checkout ${BRANCH} && \
